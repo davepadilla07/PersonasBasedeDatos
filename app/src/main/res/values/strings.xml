@@ -25,6 +25,11 @@
     <string name="error3">Digite el apellido</string>
     <string name="mensaje1">Seleccione por lo menos un pasatiempo</string>
     <string name="mensaje2">Persona guardada exitosamente!</string>
+    <string name="mensaje3">Persona eliminada exitosamente!</string>
+    <string name="confirmacion">Confirmacion</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="mensaje4">¿Esta seguro(a) que desea eliminar esta persona?</string>
     <string-array name="opciones">
         <item>@string/registrar</item>
         <item>@string/listado_Tabla</item>

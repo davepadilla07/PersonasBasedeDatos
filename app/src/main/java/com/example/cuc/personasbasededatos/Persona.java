@@ -107,4 +107,21 @@ public class Persona {
         //cerrar conexion
         db.close();
     }
+
+    public void eliminar(Context contexto) {
+        //Declarar variables
+        SQLiteDatabase db;
+        String sql;
+
+        //Abrir conexion base de datos en escritura
+        PersonasSQLiteOpenHelper aux = new PersonasSQLiteOpenHelper(contexto, "DBPersonas", null, 1);
+        db = aux.getWritableDatabase();
+
+        //Insertar forma 1
+        sql = "DELETE FROM Personas where cedula='" + this.getCedula() + "'";
+
+        db.execSQL(sql);
+
+        db.close();
+    }
 }

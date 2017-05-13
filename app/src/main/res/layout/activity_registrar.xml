@@ -50,7 +50,8 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/button"
                     android:layout_weight="1"
-                    android:layout_marginTop="10dp" />
+                    android:layout_marginTop="10dp"
+                    android:onClick="buscar" />
 
             </LinearLayout>
 
@@ -163,7 +164,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/button3"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:onClick="eliminar" />
 
                 <Button
                     android:text="@string/borrar"
