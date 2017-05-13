@@ -30,6 +30,7 @@
     <string name="confirmar">Confirmar</string>
     <string name="cancelar">Cancelar</string>
     <string name="mensaje4">¿Esta seguro(a) que desea eliminar esta persona?</string>
+    <string name="mensaje5">Persona modificada exitosamente!</string>
     <string-array name="opciones">
         <item>@string/registrar</item>
         <item>@string/listado_Tabla</item>
