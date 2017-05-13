@@ -37,20 +37,19 @@
                 <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:inputType="textPersonName"
                     android:ems="10"
                     android:id="@+id/txtCedula"
                     android:layout_weight="1"
                     android:hint="@string/cedula"
-                    android:layout_marginTop="10dp" />
+                    android:layout_marginTop="10dp"
+                    android:inputType="number" />
 
                 <Button
-                    android:text="Button"
+                    android:text="@string/buscar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/button"
                     android:layout_weight="1"
-                    tools:text="@string/buscar"
                     android:layout_marginTop="10dp" />
 
             </LinearLayout>
@@ -74,13 +73,12 @@
                 android:layout_marginTop="10dp" />
 
             <TextView
-                android:text="TextView"
+                android:text="@string/genero"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView2"
                 android:textSize="18sp"
                 android:textStyle="normal|bold"
-                tools:text="@string/genero"
                 android:layout_marginTop="10dp" />
 
             <RadioGroup
@@ -89,99 +87,91 @@
                 android:layout_marginTop="10dp">
 
                 <RadioButton
-                    android:text="RadioButton"
+                    android:text="@string/masculino"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/r1"
                     android:layout_weight="1"
-                    android:checked="true"
-                    tools:text="@string/masculino" />
+                    android:checked="true" />
 
                 <RadioButton
-                    android:text="RadioButton"
+                    android:text="@string/femenino"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/r2"
-                    android:layout_weight="1"
-                    tools:text="@string/femenino" />
+                    android:layout_weight="1" />
             </RadioGroup>
 
             <TextView
-                android:text="TextView"
+                android:text="@string/pasatiempos"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView3"
                 android:textStyle="normal|bold"
                 android:textSize="18sp"
-                tools:text="@string/pasatiempos"
                 android:layout_marginTop="10dp" />
 
             <CheckBox
-                android:text="CheckBox"
+                android:text="@string/programar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/chkProgramar"
                 android:textSize="14sp"
-                android:checked="true"
-                tools:text="@string/programar" />
+                android:checked="false" />
 
             <CheckBox
-                android:text="CheckBox"
+                android:text="@string/leer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/chkLeer"
-                tools:text="@string/leer" />
+                android:id="@+id/chkLeer" />
 
             <CheckBox
-                android:text="CheckBox"
+                android:text="@string/bailar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/chkBailar"
-                tools:text="@string/bailar" />
+                android:id="@+id/chkBailar" />
 
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="10dp">
 
                 <Button
-                    android:text="Button"
+                    android:text="@string/guardar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/button5"
                     android:layout_weight="1"
-                    tools:text="@string/guardar" />
+                    android:onClick="guardar" />
 
                 <Button
-                    android:text="Button"
+                    android:text="@string/modificar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/button4"
-                    android:layout_weight="1"
-                    tools:text="@string/modificar" />
+                    android:layout_weight="1" />
             </LinearLayout>
 
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content">
 
                 <Button
-                    android:text="Button"
+                    android:text="@string/eliminar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/button3"
-                    android:layout_weight="1"
-                    tools:text="@string/eliminar" />
+                    android:layout_weight="1" />
 
                 <Button
-                    android:text="Button"
+                    android:text="@string/borrar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/button2"
                     android:layout_weight="1"
-                    tools:text="@string/borrar" />
+                    android:onClick="borrar" />
             </LinearLayout>
 
         </LinearLayout>

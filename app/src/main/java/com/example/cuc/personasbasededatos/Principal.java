@@ -10,7 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 public class Principal extends AppCompatActivity {
-    private ListView ls;
+    private ListView op;
     private Resources res;
     private String[] opc;
     private Intent i;
@@ -20,17 +20,17 @@ public class Principal extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
 
-        ls=(ListView)findViewById(R.id.lstOpciones);
+        op=(ListView)findViewById(R.id.lstOpciones);
 
         res=this.getResources();
 
         opc=res.getStringArray(R.array.opciones);
 
-        ArrayAdapter adapter = new ArrayAdapter(this,android.R.layout.simple_list_item_1,opc);
+       ArrayAdapter adapter = new ArrayAdapter(this,android.R.layout.simple_list_item_1,opc);
 
-        ls.setAdapter(adapter);
+        op.setAdapter(adapter);
 
-        ls.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        op.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 switch(position){

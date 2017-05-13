@@ -18,11 +18,16 @@
     <string name="buscar">BUSCAR</string>
     <string name="numero">No.</string>
     <string name="sexo">Sexo</string>
-    <array name="listado_Tabla">Listado Tabla</array>
-    <array name="listado">Listado</array>
+    <string name="listado_Tabla">Listado Tabla</string>
+    <string name="listado">Listado</string>
+    <string name="error1">Digite la cedula</string>
+    <string name="error2">Digite el nombre</string>
+    <string name="error3">Digite el apellido</string>
+    <string name="mensaje1">Seleccione por lo menos un pasatiempo</string>
+    <string name="mensaje2">Persona guardada exitosamente!</string>
     <string-array name="opciones">
         <item>@string/registrar</item>
-        <item>@array/listado_Tabla</item>
-        <item>@array/listado</item>
+        <item>@string/listado_Tabla</item>
+        <item>@string/listado</item>
     </string-array>
 </resources>
